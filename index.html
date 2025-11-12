@@ -1,188 +1,238 @@
 <!doctype html>
 <html lang="fr">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>NeuralAccess.ai</title>
-<meta name="description" content="NeuralAccess.ai — contrôle d’accès neuraux pour BCI : authentification/autorisation, consentement, politiques, chiffrement, audit trail & conformité (AI Act, NIS2, ISO 27001/27701, IEC 81001-5-1, MDR/FDA). Offres sérieuses uniquement.">
-<meta property="og:title" content="NeuralAccess.ai">
-<meta property="og:description" content="BCI access control: neural authentication, consent management, policies, encryption & compliance.">
-<meta property="og:image" content="https://www.neuralaccess.ai/og.jpg">
-<link rel="icon" href="/logo-neuralaccess.png">
-<style>
-:root{--bg:#0e1621;--card:#121b27;--ink:#e9eef5;--muted:#a9b4c2;--line:#223042;--pill:#0f2236}
-*{box-sizing:border-box}html,body{margin:0;background:var(--bg);color:var(--ink);font:15.5px/1.65 system-ui,-apple-system,Segoe UI,Inter,Roboto,Arial}
-a{color:inherit}.wrap{max-width:960px;margin:30px auto;padding:0 16px}
-.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px;margin-bottom:14px}
-.hrow{display:flex;justify-content:space-between;align-items:center;gap:10px}
-.logo{width:160px;height:auto;margin:6px 0 2px}
-h1{font-size:28px;margin:0 0 8px}h2{font-size:16px;margin:0 0 10px}
-p{margin:6px 0;color:var(--muted)}
-.badges{display:flex;flex-wrap:wrap;gap:8px}
-.badge{background:var(--pill);border:1px solid var(--line);color:#cfe5ff;border-radius:999px;padding:6px 10px;font-size:12.5px}
-.btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}
-.btn{background:#11263a;border:1px solid #1e3851;color:#d8eeff;padding:8px 12px;border-radius:10px;text-decoration:none}
-.btn:hover{border-color:#396289}.btn-ghost{background:#0f1f33;border:1px solid #263a51;color:#cbd8e6}
-.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-.item{background:var(--pill);border:1px solid var(--line);padding:10px 12px;border-radius:10px;color:#c7d5e6}
-.footer{font-size:12.5px;color:#93a2b3;margin:14px 0;text-align:left}
-.lang{display:flex;gap:8px}
-.lang a{display:inline-block;background:#0f1f33;border:1px solid var(--line);padding:6px 10px;border-radius:999px;color:#cbd8e6;text-decoration:none}
-.lang a.active{border-color:#2d5073;color:#e9f4ff}
-.info{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
-.info .call{background:#0f1f33;border:1px dashed #2a3b52;color:#d8e7f7;border-radius:12px;padding:8px 12px;font-size:13px}
-@media(max-width:720px){.grid{grid-template-columns:1fr}}
-</style>
-<script>
-function setLang(lang){
-  document.documentElement.lang = lang;
-  document.getElementById('fr').style.display = (lang==='fr')?'block':'none';
-  document.getElementById('en').style.display = (lang==='en')?'block':'none';
-  document.getElementById('btn-fr').classList.toggle('active', lang==='fr');
-  document.getElementById('btn-en').classList.toggle('active', lang==='en');
-}
-</script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Neuralaccess.ai — Actif numérique premium, disponible à l’acquisition</title>
+  <meta name="description" content="Neuralaccess.ai — accès, identité & sécurité pour interfaces neuronales (BCI). SDKs & APIs, permissions, conformité, éthique & protection des données. Offres sérieuses uniquement (entreprises & institutions)." />
+
+  <link rel="canonical" href="https://www.neuralaccess.ai/" />
+  <link rel="alternate" href="https://www.neuralaccess.ai/" hreflang="fr" />
+  <link rel="alternate" href="https://www.neuralaccess.ai/" hreflang="en" />
+  <link rel="alternate" href="https://www.neuralaccess.ai/" hreflang="x-default" />
+  <meta name="robots" content="index,follow,max-image-preview:large">
+
+  <meta property="og:title" content="Neuralaccess.ai — Actif numérique premium" />
+  <meta property="og:description" content="Accès & sécurité pour interfaces neuronales (BCI) — SDKs, APIs, permissions, conformité & privacy." />
+  <meta property="og:url" content="https://www.neuralaccess.ai/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://www.neuralaccess.ai/og.jpg" />
+  <meta property="og:image:alt" content="Neuralaccess.ai — premium digital asset" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://www.neuralaccess.ai/og.jpg" />
+
+  <link rel="icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="preload" as="image" href="/logo-neuralaccess-ai.png" imagesizes="160px">
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"WebSite",
+    "name":"Neuralaccess.ai",
+    "url":"https://www.neuralaccess.ai/",
+    "inLanguage":["fr-FR","en-GB","en-US"],
+    "description":"Accès, identité & sécurité pour interfaces neuronales (BCI). SDKs & APIs, permissions, conformité & protection des données.",
+    "sameAs":["https://www.linkedin.com/company/neuralaccessai"],
+    "potentialAction":{"@type":"CommunicateAction","target":"mailto:contact@neuralaccess.ai"}
+  }
+  </script>
+
+  <style>
+    :root{--bg:#0b1220;--card:#121a2b;--muted:#7a87a2;--text:#e9eefc;--accent:#8ab4ff;--chip:#1b2640;--shadow:0 10px 30px rgba(0,0,0,.35);--radius:18px}
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font:15px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Inter,Ubuntu,Arial,sans-serif}
+    a{color:var(--accent);text-decoration:none} a:hover{text-decoration:underline}
+    .wrap{max-width:1040px;margin:0 auto;padding:28px}
+    .topbar{display:flex;justify-content:space-between;align-items:center;margin:8px 0 22px}
+    .badge{display:inline-flex;align-items:center;gap:8px;background:var(--chip);border:1px solid #23304a;border-radius:999px;padding:6px 12px;color:#b7c5e6;font-size:13px}
+    .lang{gap:10px;display:flex;align-items:center}
+    .lang button{background:var(--chip);color:var(--text);border:1px solid #23304a;padding:7px 12px;border-radius:999px;cursor:pointer}
+    .lang button[aria-pressed="true"]{background:var(--accent);color:#0b1422;border-color:transparent}
+    .card{background:var(--card);border:1px solid #23304a;border-radius:var(--radius);padding:26px;box-shadow:var(--shadow)}
+    .hero h1{margin:0 0 8px;font-size:46px;letter-spacing:.5px}
+    .cta{display:flex;gap:12px;flex-wrap:wrap;margin:18px 0 6px}
+    .btn{display:inline-flex;align-items:center;gap:8px;background:#1a2a47;color:#fff;border:1px solid #26385e;padding:12px 16px;border-radius:999px;cursor:pointer;text-decoration:none}
+    .btn.primary{background:var(--accent);color:#0b1422;border-color:transparent}
+    .grid{display:grid;grid-template-columns:repeat(12,1fr);gap:18px}
+    .col-6{grid-column:span 6}.col-12{grid-column:span 12}
+    .chip{display:inline-block;background:var(--chip);border:1px solid #23304a;border-radius:999px;padding:6px 10px;font-size:13px;color:#b7c5e6}
+    .list{display:grid;gap:10px;margin:8px 0}
+    .muted{color:var(--muted)} .foot{opacity:.8;font-size:13px;margin-top:24px}
+    img.logo{max-width:260px;height:auto;display:block;margin:8px 0 6px;opacity:.95;border-radius:12px}
+    @media (max-width:860px){.col-6{grid-column:span 12}.hero h1{font-size:36px}}
+    .ico{width:16px;height:16px;display:inline-block;vertical-align:middle}
+  </style>
 </head>
-<body onload="setLang('fr')">
-<div class="wrap">
-
-  <!-- HEADER / LANG -->
-  <div class="hrow">
-    <div class="badge">Disponible à l’acquisition</div>
-    <div class="lang">
-      <a href="#fr" id="btn-fr" onclick="setLang('fr')">FR</a>
-      <a href="#en" id="btn-en" onclick="setLang('en')">EN</a>
+<body>
+  <div class="wrap">
+    <div class="topbar">
+      <div class="badge">Disponible à l’acquisition</div>
+      <div class="lang">
+        <button id="btn-fr" aria-pressed="true">FR</button>
+        <button id="btn-en" aria-pressed="false">EN</button>
+      </div>
     </div>
+
+    <!-- HERO FR -->
+    <section class="card hero" data-fr>
+      <h1>Neuralaccess.ai</h1>
+      <img class="logo" src="/logo-neuralaccess-ai.png" alt="Neuralaccess.ai" loading="eager">
+      <p class="muted">Accès, identité & sécurité pour <b>interfaces neuronales (BCI)</b> — <b>SDKs & APIs</b>, permissions, conformité, éthique & protection des données.<br><b>Offres sérieuses uniquement (entreprises & institutions).</b></p>
+      <div class="cta">
+        <a class="btn primary" href="mailto:contact@neuralaccess.ai?subject=Neuralaccess.ai%20-%20NDA%20%2F%20Proposition&body=Bonjour%2C%0D%0A%0D%0AJe%20souhaite%20obtenir%20votre%20NDA%20et%2Fou%20proposer%20une%20offre%20pour%20Neuralaccess.ai.%0D%0AEntreprise%20%3A%20%0D%0ANom%20%2F%20Fonction%20%3A%20%0D%0AUsage%20pr%C3%A9vu%20%3A%20%0D%0ABudget%20indicatif%20%3A%20%0D%0A%0D%0ACordialement%2C">Proposer une offre / Demander un NDA</a>
+        <a class="btn" href="#value-fr">Pourquoi ce nom ?</a>
+        <a class="btn" href="https://www.linkedin.com/company/neuralaccessai" target="_blank" rel="noopener" aria-label="Ouvrir la page LinkedIn Neuralaccess.ai">
+          <svg class="ico" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5C4.98 4.88 3.85 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8.5h4V23h-4V8.5zM8.5 8.5h3.8v2h.05c.53-1 1.84-2.05 3.78-2.05 4.04 0 4.79 2.66 4.79 6.13V23h-4v-6.5c0-1.55-.03-3.54-2.16-3.54-2.16 0-2.49 1.68-2.49 3.43V23h-4V8.5z"/></svg>
+          LinkedIn
+        </a>
+      </div>
+      <p class="muted" style="margin-top:8px"><b>Nota :</b> actif numérique premium. <b>Usage descriptif</b>. <b>Aucune affiliation officielle</b>. <b>Pas de conseil juridique.</b></p>
+    </section>
+
+    <!-- VALUE + USE CASES (FR) -->
+    <section id="value-fr" class="card" style="margin-top:16px" data-fr>
+      <div class="grid">
+        <div class="col-6">
+          <h3>Pourquoi ce nom vaut cher</h3>
+          <div class="list">
+            <div class="chip">Exact-match mémorable — “neural access”, <b>.ai</b> lisible & crédible</div>
+            <div class="chip">SEO B2B immédiat — outils d’accès/sécurité appliqués aux BCI</div>
+            <div class="chip">Plateforme dev — <b>SDKs/APIs</b>, IAM/ABAC, consentement & traçabilité</div>
+            <div class="chip">Go-to-market — bannière neutre & lisible C-level</div>
+          </div>
+        </div>
+        <div class="col-6">
+          <h3>Cas d’usage possibles</h3>
+          <div class="list">
+            <div class="chip">Identité neuro-utilisateur & permissions (authZ/authN)</div>
+            <div class="chip">Sécurité & privacy : chiffrement, anonymisation, <b>consentement</b></div>
+            <div class="chip">Conformité & éthique : dispositifs médicaux, traçabilité IA/BCI</div>
+            <div class="chip">Intégrations : IAM, GRC, DLP, MDM, SIEM, evidence store</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CFO ANCHORS (FR) -->
+    <section class="card" style="margin-top:16px" data-fr>
+      <h3>Pourquoi cet actif est stratégique (Ancrages CFO)</h3>
+      <div class="list">
+        <div class="chip"><b>Ancrage Stratégique :</b> bannière neutre pour aligner Exécutif, Juridique, IT & Produit sur l’accès/éthique BCI.</div>
+        <div class="chip"><b>Coût alternatif (notoriété) :</b> campagne multi-pays 6–12 mois + change management : <b>€0,4M–1,5M</b> / 12–18 mois.</div>
+        <div class="chip"><b>Coût du retard (risque) :</b> audits, deals différés, reworks : ordre <b>€0,8M–2,0M</b> / 12–18 mois.</div>
+        <div class="chip"><b>Prime stratégique :</b> contrôle du langage “neural access” 2025–2028, lisible C-suite, exact-match <b>.ai</b>.</div>
+      </div>
+    </section>
+
+    <!-- ACQUISITION (FR) -->
+    <section class="card" style="margin-top:16px" data-fr>
+      <h3>Acquisition (process sécurisé)</h3>
+      <p class="muted">Processus C-Level : NDA → data-room (brief stratégique) → offre → escrow → transfert. Vision long-terme & usage à forte valeur.</p>
+      <a class="btn primary" href="mailto:contact@neuralaccess.ai?subject=Neuralaccess.ai%20-%20NDA%20%2F%20Proposition">Contact direct : contact@neuralaccess.ai</a>
+    </section>
+
+    <!-- COMPLEMENTARY ASSETS (FR) -->
+    <section class="card" style="margin-top:16px" data-fr>
+      <h3>Actifs complémentaires (sélection)</h3>
+      <ul class="list">
+        <li class="chip"><a href="https://www.bciaccess.com" target="_blank" rel="noopener">BCIaccess.com</a> — bannière “accès BCI”, .com global</li>
+        <li class="chip"><a href="https://www.neuromax.ai" target="_blank" rel="noopener">Neuromax.ai</a> — outils & portails sécurité BCI</li>
+        <li class="chip"><a href="https://www.bcisafety.ai" target="_blank" rel="noopener">BCIsafety.ai</a> — veille sécurité/éthique BCI par IA</li>
+      </ul>
+      <p class="foot">Offres sérieuses uniquement. Possibilité de pack « multi-actifs ». <br>Contact : <a href="mailto:contact@neuralaccess.ai">contact@neuralaccess.ai</a></p>
+    </section>
+
+    <!-- DOCS (FR) -->
+    <section class="card" style="margin-top:16px" data-fr>
+      <h3>Documents / Briefs</h3>
+      <div class="cta">
+        <a class="btn" href="/Acquisition%20Brief%20Neuralaccess-AI-202511.pdf" target="_blank" rel="noopener" type="application/pdf">👁️ Ouvrir (FR) dans le navigateur</a>
+        <a class="btn primary" href="/Acquisition%20Brief%20Neuralaccess-AI-202511.pdf" download="Neuralaccess-AI-Brief-FR-202511.pdf" type="application/pdf">📥 Télécharger (FR, PDF)</a>
+        <a class="btn" href="/Acquisition%20Brief%20Neuralaccess-AI-EN-202511.pdf" target="_blank" rel="noopener" type="application/pdf">👁️ Open (EN) in browser</a>
+        <a class="btn primary" href="/Acquisition%20Brief%20Neuralaccess-AI-EN-202511.pdf" download="Neuralaccess-AI-Brief-EN-202511.pdf" type="application/pdf">📥 Download (EN, PDF)</a>
+      </div>
+    </section>
+
+    <!-- HERO EN -->
+    <section class="card hero" data-en hidden>
+      <h1>Neuralaccess.ai</h1>
+      <img class="logo" src="/logo-neuralaccess-ai.png" alt="Neuralaccess.ai" loading="eager">
+      <p class="muted">Access, identity & security for <b>neural interfaces (BCIs)</b> — <b>SDKs & APIs</b>, permissions, compliance, ethics & data protection.<br><b>Serious offers only (companies & institutions).</b></p>
+      <div class="cta">
+        <a class="btn primary" href="mailto:contact@neuralaccess.ai?subject=Neuralaccess.ai%20-%20NDA%20%2F%20Offer&body=Hello%2C%0D%0A%0D%0AI%27d%20like%20to%20request%20your%20NDA%20and%2For%20submit%20an%20offer%20for%20Neuralaccess.ai.%0D%0ACompany%3A%20%0D%0AName%20%2F%20Role%3A%20%0D%0AIntended%20use%3A%20%0D%0ABudget%20range%3A%20%0D%0ABest%2C">Submit an offer / Request NDA</a>
+        <a class="btn" href="#value-en">Why this name?</a>
+        <a class="btn" href="https://www.linkedin.com/company/neuralaccessai" target="_blank" rel="noopener" aria-label="Open Neuralaccess.ai on LinkedIn">
+          <svg class="ico" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5C4.98 4.88 3.85 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8.5h4V23h-4V8.5zM8.5 8.5h3.8v2h.05c.53-1 1.84-2.05 3.78-2.05 4.04 0 4.79 2.66 4.79 6.13V23h-4v-6.5c0-1.55-.03-3.54-2.16-3.54-2.16 0-2.49 1.68-2.49 3.43V23h-4V8.5z"/></svg>
+          LinkedIn
+        </a>
+      </div>
+      <p class="muted" style="margin-top:8px"><b>Note:</b> premium digital asset. <b>Descriptive use</b>. <b>No official affiliation</b>. <b>No legal advice.</b></p>
+    </section>
+
+    <!-- VALUE + USE CASES (EN) -->
+    <section id="value-en" class="card" style="margin-top:16px" data-en hidden>
+      <div class="grid">
+        <div class="col-6">
+          <h3>Why this name is valuable</h3>
+          <div class="list">
+            <div class="chip">Exact-match & memorable — “neural access”, trusted <b>.ai</b></div>
+            <div class="chip">Instant B2B SEO — access/security layer for BCIs</div>
+            <div class="chip">Developer platform — <b>SDKs/APIs</b>, IAM/ABAC, consent & traceability</div>
+            <div class="chip">Go-to-market banner — neutral & C-suite-readable</div>
+          </div>
+        </div>
+        <div class="col-6">
+          <h3>Possible use cases</h3>
+          <div class="list">
+            <div class="chip">Neuro-user identity & permissions (authN/authZ)</div>
+            <div class="chip">Security & privacy: encryption, anonymization, <b>consent</b></div>
+            <div class="chip">Compliance & ethics: medical devices, AI/BCI traceability</div>
+            <div class="chip">Integrations: IAM, GRC, DLP, MDM, SIEM, evidence store</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ACQUISITION (EN) -->
+    <section class="card" style="margin-top:16px" data-en hidden>
+      <h3>Acquisition (secure process)</h3>
+      <p class="muted">C-level flow: NDA → data room (strategic brief) → offer → escrow → transfer. Long-term vision & high-value usage.</p>
+      <a class="btn primary" href="mailto:contact@neuralaccess.ai?subject=Neuralaccess.ai%20-%20NDA%20%2F%20Offer">Direct contact: contact@neuralaccess.ai</a>
+    </section>
+
+    <!-- COMPLEMENTARY ASSETS (EN) -->
+    <section class="card" style="margin-top:16px" data-en hidden>
+      <h3>Complementary assets (selection)</h3>
+      <ul class="list">
+        <li class="chip"><a href="https://www.bciaccess.com" target="_blank" rel="noopener">BCIaccess.com</a> — “BCI access” global .com banner</li>
+        <li class="chip"><a href="https://www.neuromax.ai" target="_blank" rel="noopener">Neuromax.ai</a> — security tools & portals for BCIs</li>
+        <li class="chip"><a href="https://www.bcisafety.ai" target="_blank" rel="noopener">BCIsafety.ai</a> — AI-powered safety/ethics intelligence</li>
+      </ul>
+      <p class="foot">Serious offers only. Multi-asset pack available. <br>Contact: <a href="mailto:contact@neuralaccess.ai">contact@neuralaccess.ai</a></p>
+    </section>
+
+    <!-- DOCS (EN) -->
+    <section class="card" style="margin-top:16px" data-en hidden>
+      <h3>Documents / Briefs</h3>
+      <div class="cta">
+        <a class="btn" href="/Acquisition%20Brief%20Neuralaccess-AI-EN-202511.pdf" target="_blank" rel="noopener" type="application/pdf">👁️ Open (EN) in browser</a>
+        <a class="btn primary" href="/Acquisition%20Brief%20Neuralaccess-AI-EN-202511.pdf" download="Neuralaccess-AI-Brief-EN-202511.pdf" type="application/pdf">📥 Download (EN, PDF)</a>
+        <a class="btn" href="/Acquisition%20Brief%20Neuralaccess-AI-202511.pdf" target="_blank" rel="noopener" type="application/pdf">👁️ Ouvrir (FR) dans le navigateur</a>
+        <a class="btn primary" href="/Acquisition%20Brief%20Neuralaccess-AI-202511.pdf" download="Neuralaccess-AI-Brief-FR-202511.pdf" type="application/pdf">📥 Télécharger (FR, PDF)</a>
+      </div>
+    </section>
+
+    <p class="foot muted">© Neuralaccess.ai — actif numérique premium. Aucune affiliation avec des marques/organismes tiers. Usage descriptif uniquement. Pas de conseil juridique. — Contact : <a href="mailto:contact@neuralaccess.ai">contact@neuralaccess.ai</a></p>
   </div>
 
-  <!-- ===== FR ===== -->
-  <div id="fr">
-    <div class="card">
-      <h1>NeuralAccess.ai</h1>
-      <img class="logo" src="/logo-neuralaccess.png" alt="NeuralAccess.ai">
-      <p>La référence pour le <strong>contrôle d’accès neuraux</strong> (BCI) : <strong>authentification</strong> & <strong>autorisation</strong> orientées signaux, gestion de <strong>consentement</strong>, <strong>politiques d’accès</strong> dynamiques, chiffrement <em>edge-to-cloud</em>, <strong>journal d’audit</strong> & conformité.</p>
-      <p><strong>Cadres :</strong> EU AI Act (haut risque), NIS2, ISO 27001/27701, IEC 81001-5-1, ISO 14971, IEC 62304/62443, MDR/FDA (SaMD).</p>
-      <p><strong>Offres sérieuses uniquement (entreprises & institutions).</strong></p>
-      <div class="info" style="margin-top:6px">
-        <span class="call">💡 <strong>Aussi disponible :</strong> <em>NeuralAccess.io</em> — pack <strong>.ai + .io</strong> sur demande</span>
-        <a class="btn" href="mailto:contact@neuralaccess.ai?subject=NeuralAccess.ai%20%2B%20NeuralAccess.io%20-%20Int%C3%A9r%C3%AAt">Demander info pack .ai + .io</a>
-      </div>
-      <div class="btns">
-        <a class="btn" href="mailto:contact@neuralaccess.ai?subject=NeuralAccess.ai%20-%20Offre%20ou%20NDA">Proposer une offre / Demander un NDA</a>
-        <a class="btn btn-ghost" href="#fr-why">Pourquoi ce nom ?</a>
-      </div>
-    </div>
-
-    <div class="grid">
-      <div class="card">
-        <h2>Pourquoi ce nom vaut cher</h2>
-        <div class="item">Exact-match *.ai* — leadership « BCI access control »</div>
-        <div class="item">Fit direct B2B : hardware BCI, SaMD, edge-AI, santé/assurances</div>
-        <div class="item">Accélérateur conformité (AI Act, NIS2, ISO, MDR/FDA)</div>
-        <div class="item">Monétisable en marque/plateforme, SDK & APIs</div>
-      </div>
-      <div class="card">
-        <h2>Cas d’usage possibles</h2>
-        <div class="item">SDK d’authentification neurale (multi-facteurs neuraux)</div>
-        <div class="item">Gestion de consentements & preuves horodatées</div>
-        <div class="item">Policy engine (RBAC/ABAC) adapté aux signaux neuronaux</div>
-        <div class="item">Chiffrement & HSM, SBOM, durcissement firmware</div>
-      </div>
-    </div>
-
-    <div id="fr-why" class="card">
-      <h2>Acquisition (process sécurisé)</h2>
-      <p>NDA → data-room → offre → escrow → transfert. Vision long-terme & usage à forte valeur.</p>
-      <div class="badges">
-        <span class="badge">Priorité acteurs européens</span>
-        <span class="badge">Usage responsable</span>
-        <span class="badge">Aucune affiliation officielle</span>
-      </div>
-      <div class="btns" style="margin-top:8px">
-        <a class="btn" href="mailto:contact@neuralaccess.ai?subject=NeuralAccess.ai%20-%20Contact">Contact direct : contact@neuralaccess.ai</a>
-      </div>
-    </div>
-
-    <div class="card">
-      <h2>Actifs complémentaires (sélection)</h2>
-      <div class="badges">
-        <a class="badge" href="https://www.bciaccess.com/" target="_blank" rel="noopener">BCIaccess.com — identité & sécurité BCI</a>
-        <a class="badge" href="https://www.neuromax.ai/" target="_blank" rel="noopener">Neuromax.ai — sécurité/identité & conformité neurale</a>
-        <a class="badge" href="https://www.payrisk.ai/" target="_blank" rel="noopener">PayRisk.ai — paiements & identité</a>
-        <a class="badge" href="https://www.quantique.io/" target="_blank" rel="noopener">Quantique.io — R&D quantique (crypto/QRNG)</a>
-      </div>
-      <p class="small">Séries d’offres & packs multi-actifs possibles — <a href="mailto:contact@neuralaccess.ai">contact@neuralaccess.ai</a></p>
-    </div>
-
-    <div class="footer">
-      © NeuralAccess.ai — actif numérique premium. Aucune affiliation avec des marques tierces. Aucune information médicale. Usage descriptif uniquement. — Contact : <a href="mailto:contact@neuralaccess.ai">contact@neuralaccess.ai</a>
-    </div>
-  </div>
-
-  <!-- ===== EN ===== -->
-  <div id="en" style="display:none">
-    <div class="card">
-      <h1>NeuralAccess.ai</h1>
-      <img class="logo" src="/logo-neuralaccess.png" alt="NeuralAccess.ai">
-      <p>The reference for <strong>neural access control</strong> (BCI): signal-aware <strong>authentication</strong> & <strong>authorization</strong>, <strong>consent management</strong>, dynamic <strong>policies</strong>, <em>edge-to-cloud</em> encryption, <strong>audit trail</strong> & compliance.</p>
-      <p><strong>Frameworks:</strong> EU AI Act (high-risk), NIS2, ISO 27001/27701, IEC 81001-5-1, ISO 14971, IEC 62304/62443, MDR/FDA (SaMD).</p>
-      <p><strong>Serious offers only (companies & institutions).</strong></p>
-      <div class="info" style="margin-top:6px">
-        <span class="call">💡 <strong>Also available:</strong> <em>NeuralAccess.io</em> — ask for the <strong>.ai + .io</strong> bundle</span>
-        <a class="btn" href="mailto:contact@neuralaccess.ai?subject=NeuralAccess.ai%20%2B%20NeuralAccess.io%20-%20Interest">Request .ai + .io pack info</a>
-      </div>
-      <div class="btns">
-        <a class="btn" href="mailto:contact@neuralaccess.ai?subject=NeuralAccess.ai%20-%20Offer%20or%20NDA">Submit an offer / Request NDA</a>
-        <a class="btn btn-ghost" href="#en-why">Why this name?</a>
-      </div>
-    </div>
-
-    <div class="grid">
-      <div class="card">
-        <h2>Why this name is valuable</h2>
-        <div class="item">Exact-match *.ai* → leadership in “BCI access control”</div>
-        <div class="item">Direct B2B fit: BCI hardware, SaMD, edge-AI, healthcare/insurance</div>
-        <div class="item">Compliance accelerator (AI Act, NIS2, ISO, MDR/FDA)</div>
-        <div class="item">Monetizable as brand/platform, SDK & APIs</div>
-      </div>
-      <div class="card">
-        <h2>Possible use cases</h2>
-        <div class="item">Neural auth SDK (neural multi-factor)</div>
-        <div class="item">Consent management & time-stamped evidence</div>
-        <div class="item">Policy engine (RBAC/ABAC) for neural signals</div>
-        <div class="item">Encryption & HSM, SBOM, firmware hardening</div>
-      </div>
-    </div>
-
-    <div id="en-why" class="card">
-      <h2>Acquisition (secure process)</h2>
-      <p>NDA → data room → offer → escrow → transfer. Long-term vision & high-value usage.</p>
-      <div class="badges">
-        <span class="badge">EU buyers priority</span>
-        <span class="badge">Responsible use</span>
-        <span class="badge">No official affiliation</span>
-      </div>
-      <div class="btns" style="margin-top:8px">
-        <a class="btn" href="mailto:contact@neuralaccess.ai?subject=NeuralAccess.ai%20-%20Contact">Direct contact: contact@neuralaccess.ai</a>
-      </div>
-    </div>
-
-    <div class="card">
-      <h2>Complementary assets (selection)</h2>
-      <div class="badges">
-        <a class="badge" href="https://www.bciaccess.com/" target="_blank" rel="noopener">BCIaccess.com — identity & security for BCIs</a>
-        <a class="badge" href="https://www.neuromax.ai/" target="_blank" rel="noopener">Neuromax.ai — neural security/identity & compliance</a>
-        <a class="badge" href="https://www.payrisk.ai/" target="_blank" rel="noopener">PayRisk.ai — payments & identity</a>
-        <a class="badge" href="https://www.quantique.io/" target="_blank" rel="noopener">Quantique.io — quantum R&D (crypto/QRNG)</a>
-      </div>
-      <p class="small">Series offers & multi-asset packs possible — <a href="mailto:contact@neuralaccess.ai">contact@neuralaccess.ai</a></p>
-    </div>
-
-    <div class="footer">
-      © NeuralAccess.ai — premium digital asset. No medical information. No affiliation with third-party trademarks. Descriptive use only. — Contact: <a href="mailto:contact@neuralaccess.ai">contact@neuralaccess.ai</a>
-    </div>
-  </div>
-
-</div>
+  <script>
+    const frBtn=document.getElementById('btn-fr'); const enBtn=document.getElementById('btn-en');
+    const show=(lang)=>{document.querySelectorAll('[data-fr]').forEach(n=>n.hidden=(lang!=='fr'));
+      document.querySelectorAll('[data-en]').forEach(n=>n.hidden=(lang!=='en'));
+      frBtn.setAttribute('aria-pressed',String(lang==='fr')); enBtn.setAttribute('aria-pressed',String(lang==='en'));
+      document.documentElement.lang=lang;};
+    frBtn.addEventListener('click',()=>show('fr')); enBtn.addEventListener('click',()=>show('en')); show('fr');
+  </script>
 </body>
 </html>
